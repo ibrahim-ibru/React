@@ -66,7 +66,7 @@ const App = () => {
     </div>
     <ul>
       {
-        todo.map((item,index)=><li key={index}><input type="checkbox" defaultValue={false}/>{item} <button onClick={()=>(handleEdit(index))}>Edit</button> <button onClick={()=>(handleDelete(index))}>Delete</button></li>)
+        todo.map((item,index)=><li key={index}><input type="checkbox" defaultValue={false} onClick={handleCheck}/>{item} <button onClick={()=>(handleEdit(index))}>Edit</button> <button onClick={()=>(handleDelete(index))}>Delete</button></li>)
     }
     </ul>
     </>
